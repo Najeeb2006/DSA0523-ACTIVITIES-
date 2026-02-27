@@ -1,0 +1,101 @@
+Order_ID,Date,Salesperson,Region,Category,Product,Units_Sold,Unit_Price,Discount,Customer_Type,Payment_Method
+ORD001,2025-01-03,Alice,North,Laptops,Dell Inspiron,2.0,750.0,0.05,Corporate,Credit Card
+ORD002,2025-01-05,Bob,South,Phones,Samsung Galaxy,5.0,499.99,0.1,Retail,Cash
+ORD003,2025-01-07,Carol,East,Accessories,USB Hub,10.0,25.0,,Retail,UPI
+ORD004,2025-01-08,Dave,West,Laptops,HP Pavilion,1.0,820.0,0.0,Corporate,Credit Card
+ORD005,2025-01-10,Alice,North,Tablets,iPad Air,3.0,599.0,0.05,Retail,Debit Card
+ORD006,2025-01-12,Eve,South,Accessories,Mouse,15.0,18.5,0.0,Retail,Cash
+ORD007,2025-01-14,Bob,East,Phones,iPhone 15,2.0,999.0,0.08,Corporate,Credit Card
+ORD008,2025-01-15,Carol,West,Laptops,Lenovo ThinkPad,1.0,1100.0,0.1,Corporate,Bank Transfer
+ORD009,2025-01-17,Dave,North,Accessories,Keyboard,8.0,45.0,0.0,Retail,UPI
+ORD010,2025-01-19,,South,Tablets,Samsung Tab,4.0,420.0,0.05,Retail,Debit Card
+ORD011,2025-01-21,Alice,East,Phones,OnePlus 12,3.0,650.0,,Corporate,Credit Card
+ORD012,2025-01-23,Bob,West,Laptops,Asus VivoBook,2.0,700.0,0.07,Retail,Cash
+ORD013,2025-01-25,,North,Accessories,Webcam,6.0,55.0,0.0,Retail,UPI
+ORD014,2025-01-27,,South,Laptops,MacBook Air,1.0,1299.0,0.05,Corporate,Credit Card
+ORD015,2025-01-29,Eve,,Phones,Pixel 8,2.0,799.0,0.0,Retail,Debit Card
+ORD016,2025-02-02,Alice,West,Tablets,Lenovo Tab,3.0,310.0,0.03,Retail,Cash
+ORD017,2025-02-04,Bob,North,Accessories,Headphones,7.0,,0.1,Corporate,Credit Card
+ORD018,2025-02-06,Carol,South,Laptops,Dell XPS,1.0,1450.0,0.05,Corporate,Bank Transfer
+ORD019,2025-02-08,Dave,East,Phones,Redmi Note,6.0,280.0,,Retail,UPI
+ORD020,2025-02-10,Eve,West,Accessories,Monitor,2.0,230.0,0.0,Corporate,Credit Card
+ORD021,2025-02-12,Alice,North,Laptops,HP Spectre,1.0,1350.0,0.08,Corporate,Credit Card
+ORD022,2025-02-14,,South,Phones,Samsung A54,4.0,399.0,0.05,Retail,Cash
+ORD023,2025-02-16,Carol,East,Tablets,iPad Mini,2.0,500.0,0.0,Retail,Debit Card
+ORD024,2025-02-18,Dave,West,Accessories,USB Hub,12.0,,0.0,Retail,UPI
+ORD025,2025-02-20,Eve,North,Laptops,Asus ZenBook,2.0,950.0,0.05,Corporate,Credit Card
+ORD026,2025-02-22,Alice,South,Accessories,Speaker,5.0,70.0,,Retail,Cash
+ORD027,2025-02-24,Bob,East,Phones,iPhone 14,3.0,799.0,0.1,Corporate,Bank Transfer
+ORD028,2025-02-26,Carol,West,Laptops,Lenovo IdeaPad,2.0,620.0,0.07,Retail,Credit Card
+ORD029,2025-03-01,Dave,North,Tablets,Samsung Tab,5.0,420.0,0.05,Retail,UPI
+ORD030,2025-03-03,Eve,South,Accessories,Keyboard,9.0,45.0,0.0,Corporate,Debit Card
+ORD031,2025-03-05,Alice,East,Phones,Pixel 7a,2.0,499.0,0.0,Retail,Cash
+ORD032,2025-03-07,Bob,West,Laptops,MacBook Pro,1.0,1999.0,0.05,Corporate,Credit Card
+ORD033,2025-03-09,Carol,North,Accessories,Headphones,4.0,85.0,0.1,Retail,UPI
+ORD034,2025-03-11,Dave,South,Phones,OnePlus Nord,5.0,350.0,0.05,Retail,Cash
+ORD035,2025-03-13,Eve,East,Laptops,Dell Inspiron,3.0,750.0,,Corporate,Credit Card
+ORD036,2025-03-15,Alice,West,Tablets,iPad Air,2.0,599.0,0.08,Corporate,
+ORD037,2025-03-17,Bob,North,Accessories,Mouse,20.0,18.5,0.0,Retail,UPI
+ORD038,2025-03-19,Carol,South,Phones,Samsung Galaxy,3.0,499.99,0.05,Corporate,
+ORD039,2025-03-21,Dave,East,Laptops,HP Pavilion,2.0,820.0,0.0,Corporate,Debit Card
+ORD040,2025-03-23,Eve,West,Accessories,Webcam,5.0,55.0,0.0,Retail,Cash
+ORD041,2025-03-25,Alice,North,Phones,Redmi Note,8.0,280.0,,Retail,UPI
+ORD042,2025-03-27,Bob,,Laptops,Asus VivoBook,1.0,700.0,0.07,Retail,Credit Card
+ORD043,2025-03-29,Carol,East,Accessories,Monitor,3.0,230.0,0.0,Corporate,Bank Transfer
+ORD044,2025-04-01,Dave,West,Phones,iPhone 15,1.0,999.0,0.1,Corporate,Credit Card
+ORD045,2025-04-03,Eve,North,Tablets,Lenovo Tab,,310.0,0.03,Retail,Cash
+ORD046,2025-04-05,Alice,South,Laptops,Dell XPS,,1450.0,0.05,Corporate,Credit Card
+ORD047,2025-04-07,Bob,East,Accessories,Speaker,6.0,70.0,0.0,Retail,UPI
+ORD048,2025-04-09,Carol,West,Phones,Samsung A54,5.0,399.0,0.05,Retail,Debit Card
+ORD049,2025-04-11,Dave,North,Laptops,HP Spectre,1.0,1350.0,,Corporate,Credit Card
+ORD050,2025-04-13,Eve,South,Accessories,USB Hub,14.0,25.0,0.0,Retail,Cash
+ORD051,2025-04-15,Alice,East,Phones,Pixel 8,3.0,799.0,0.0,Corporate,Credit Card
+ORD052,2025-04-17,Bob,West,Laptops,Lenovo ThinkPad,2.0,,0.1,Corporate,Bank Transfer
+ORD053,2025-04-19,Carol,North,Accessories,Keyboard,11.0,45.0,0.0,Retail,UPI
+ORD054,2025-04-21,Dave,South,Tablets,iPad Mini,,500.0,0.05,Retail,Debit Card
+ORD055,2025-04-23,Eve,East,Phones,OnePlus 12,2.0,650.0,,Corporate,Credit Card
+ORD056,2025-04-25,Alice,West,Laptops,Asus ZenBook,1.0,950.0,0.08,Corporate,Cash
+ORD057,2025-04-27,Bob,North,Accessories,Headphones,8.0,85.0,0.1,Retail,UPI
+ORD058,2025-04-29,Carol,South,Phones,Redmi Note,7.0,280.0,0.05,Retail,Debit Card
+ORD059,2025-05-02,Dave,East,Laptops,MacBook Air,1.0,1299.0,0.05,Corporate,Credit Card
+ORD060,2025-05-04,Eve,West,Accessories,Mouse,18.0,18.5,0.0,Retail,
+ORD061,2025-05-06,Alice,North,Phones,Samsung Galaxy,4.0,499.99,0.1,Corporate,Credit Card
+ORD062,2025-05-08,Bob,South,Tablets,Samsung Tab,3.0,420.0,,Retail,UPI
+ORD063,2025-05-10,Carol,East,Laptops,Dell Inspiron,2.0,750.0,0.05,Retail,Debit Card
+ORD064,2025-05-12,Dave,West,Accessories,Webcam,4.0,55.0,0.0,Retail,Cash
+ORD065,2025-05-14,Eve,,Phones,iPhone 14,2.0,799.0,0.08,Corporate,Credit Card
+ORD066,2025-05-16,Alice,South,Laptops,HP Pavilion,3.0,820.0,0.0,Corporate,Bank Transfer
+ORD067,2025-05-18,Bob,East,Accessories,Speaker,7.0,70.0,0.0,Retail,UPI
+ORD068,2025-05-20,Carol,West,Phones,Pixel 7a,4.0,499.0,0.05,Retail,Debit Card
+ORD069,2025-05-22,Dave,North,Tablets,iPad Air,2.0,599.0,,Corporate,
+ORD070,2025-05-24,Eve,South,Laptops,Lenovo IdeaPad,3.0,620.0,0.07,Retail,Cash
+ORD071,2025-05-26,Alice,East,Accessories,Monitor,,230.0,0.0,Corporate,Credit Card
+ORD072,2025-05-28,Bob,West,Phones,OnePlus Nord,6.0,350.0,0.05,Retail,UPI
+ORD073,2025-05-30,Carol,North,Laptops,MacBook Pro,1.0,1999.0,0.05,Corporate,Credit Card
+ORD074,2025-06-02,Dave,South,Accessories,USB Hub,16.0,25.0,0.0,Retail,Cash
+ORD075,2025-06-04,Eve,East,Phones,Samsung A54,5.0,399.0,0.1,Retail,Debit Card
+ORD076,2025-06-06,Alice,West,Laptops,Asus VivoBook,2.0,700.0,,Retail,Credit Card
+ORD077,2025-06-08,Bob,North,Accessories,Keyboard,10.0,45.0,0.0,Corporate,UPI
+ORD078,2025-06-10,Carol,South,Phones,iPhone 15,2.0,999.0,0.05,Corporate,Bank Transfer
+ORD079,2025-06-12,Dave,East,Tablets,Lenovo Tab,5.0,310.0,0.03,Retail,Debit Card
+ORD080,2025-06-14,Eve,West,Laptops,Dell XPS,1.0,,0.08,Corporate,Credit Card
+ORD081,2025-06-16,Alice,North,Accessories,Headphones,6.0,85.0,0.1,Retail,Cash
+ORD082,2025-06-18,Bob,South,Phones,Redmi Note,9.0,280.0,0.05,Retail,UPI
+ORD083,2025-06-20,Carol,East,Laptops,HP Spectre,1.0,1350.0,0.0,Corporate,Credit Card
+ORD084,2025-06-22,Dave,West,Accessories,Mouse,,18.5,,Retail,Debit Card
+ORD085,2025-06-24,Eve,North,Phones,Pixel 8,3.0,799.0,0.0,Corporate,Credit Card
+ORD086,2025-06-26,Alice,South,Tablets,iPad Mini,4.0,500.0,0.05,Retail,Cash
+ORD087,2025-06-28,Bob,East,Laptops,Lenovo ThinkPad,2.0,1100.0,0.1,Corporate,Bank Transfer
+ORD088,2025-07-01,Carol,West,Accessories,Webcam,7.0,55.0,0.0,Retail,UPI
+ORD089,2025-07-03,Dave,North,Phones,OnePlus 12,3.0,650.0,0.07,Corporate,Credit Card
+ORD090,2025-07-05,Eve,South,Laptops,Asus ZenBook,2.0,950.0,0.05,Corporate,Debit Card
+ORD091,2025-07-07,Alice,East,Accessories,Speaker,8.0,70.0,0.0,Retail,Cash
+ORD092,2025-07-09,Bob,West,Phones,Samsung Galaxy,5.0,499.99,0.1,Corporate,Credit Card
+ORD093,2025-07-11,Carol,North,Tablets,Samsung Tab,4.0,420.0,,Retail,UPI
+ORD094,2025-07-13,Dave,South,Laptops,MacBook Air,1.0,1299.0,0.05,Corporate,Bank Transfer
+ORD095,2025-07-15,Eve,East,Accessories,Monitor,3.0,230.0,0.0,Corporate,Credit Card
+ORD096,2025-07-17,Alice,West,Phones,iPhone 14,2.0,799.0,0.08,Corporate,Debit Card
+ORD097,2025-07-19,Bob,North,Laptops,Dell Inspiron,3.0,750.0,0.05,Retail,Cash
+ORD098,2025-07-21,Carol,South,Accessories,USB Hub,18.0,25.0,0.0,Retail,UPI
+ORD099,2025-07-23,Dave,East,Phones,Pixel 7a,4.0,499.0,0.05,Retail,Credit Card
+ORD100,2025-07-25,Eve,West,Tablets,iPad Air,3.0,599.0,0.1,Corporate,Credit Card
