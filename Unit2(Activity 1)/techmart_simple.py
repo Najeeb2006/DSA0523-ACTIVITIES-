@@ -1,53 +1,68 @@
 import pandas as pd
 
-# Load data
+# Load the dataset
 df = pd.read_csv("techmart_sales.csv")
-print("Shape:", df.shape)
+
+# ── 1. View the Data ──────────────────────────────────────────
+print("First 5 rows:")
 print(df.head())
 
-# ── Missing Data ──────────────────────────────────────────────
-print("\nMissing values:")
+print("\nShape (rows, columns):", df.shape)
+
+print("\nColumn Names:", list(df.columns))
+
+# ── 2. Missing Values ─────────────────────────────────────────
+print("\nMissing Values:")
 print(df.isnull().sum())
 
-df["Discount"] = df["Discount"].fillna(0)
+# Fill missing values
+df["Discount"]       = df["Discount"].fillna(df["Discount"].mean())
+df["Units_Sold"]     = df["Units_Sold"].fillna(df["Units_Sold"].mean())
+df["Unit_Price"]     = df["Unit_Price"].fillna(df["Unit_Price"].mean())
+df["Salesperson"]    = df["Salesperson"].fillna(df["Salesperson"].mode()[0])
+df["Region"]         = df["Region"].fillna(df["Region"].mode()[0])
+df["Payment_Method"] = df["Payment_Method"].fillna(df["Payment_Method"].mode()[0])
 
-# ── New Columns ───────────────────────────────────────────────
-df["Gross_Revenue"] = df["Units_Sold"] * df["Unit_Price"]
-df["Net_Revenue"]   = df["Gross_Revenue"] * (1 - df["Discount"])
-df["Profit"]        = df["Net_Revenue"] * 0.25   # 25% profit margin
+print("\nMissing Values After Cleaning:", df.isnull().sum().sum())
 
-print("\nUpdated columns:")
-print(df[["Order_ID", "Gross_Revenue", "Net_Revenue", "Profit"]].head())
+# ── 3. New Columns ────────────────────────────────────────────
+df["Total_Sales"] = df["Units_Sold"] * df["Unit_Price"]
+df["Revenue"]     = df["Total_Sales"] * (1 - df["Discount"])
 
-# ── Q1: Revenue by Region ─────────────────────────────────────
-print("\nRevenue by Region:")
-print(df.groupby("Region")["Net_Revenue"].sum().sort_values(ascending=False))
+print("\nSample Revenue Data:")
+print(df[["Product", "Units_Sold", "Unit_Price", "Discount", "Revenue"]].head())
 
-# ── Q2: Top 3 Products ────────────────────────────────────────
-print("\nTop 3 Products by Units Sold:")
+# ── 4. Group By Region ────────────────────────────────────────
+print("\nTotal Revenue by Region:")
+print(df.groupby("Region")["Revenue"].sum().round(2))
+
+# ── 5. Group By Category ──────────────────────────────────────
+print("\nTotal Revenue by Category:")
+print(df.groupby("Category")["Revenue"].sum().round(2))
+
+# ── 6. Best Salesperson ───────────────────────────────────────
+print("\nRevenue by Salesperson:")
+print(df.groupby("Salesperson")["Revenue"].sum().sort_values(ascending=False).round(2))
+
+# ── 7. Top 3 Products by Units Sold ──────────────────────────
+print("\nTop 3 Products (Units Sold):")
 print(df.groupby("Product")["Units_Sold"].sum().sort_values(ascending=False).head(3))
 
-# ── Q3: Revenue by Category ───────────────────────────────────
-print("\nRevenue by Category:")
-print(df.groupby("Category")["Net_Revenue"].sum().sort_values(ascending=False))
-
-# ── Q4: Salesperson Performance ───────────────────────────────
-print("\nSalesperson Performance:")
-print(df.groupby("Salesperson")[["Net_Revenue", "Profit"]].sum().round(2))
-
-# ── Q5: Corporate vs Retail ───────────────────────────────────
-print("\nCorporate vs Retail:")
-print(df.groupby("Customer_Type")["Net_Revenue"].sum())
-
-# ── Q6: Pivot Table ───────────────────────────────────────────
-print("\nPivot – Region vs Category:")
-pivot = pd.pivot_table(df, values="Net_Revenue", index="Region",
+# ── 8. Pivot Table ────────────────────────────────────────────
+print("\nPivot Table - Revenue by Region & Category:")
+pivot = pd.pivot_table(df, values="Revenue", index="Region",
                        columns="Category", aggfunc="sum").round(2)
 print(pivot)
 
-# ── Summary ───────────────────────────────────────────────────
-print("\n--- SUMMARY ---")
-print(f"Total Orders  : {len(df)}")
-print(f"Gross Revenue : {df['Gross_Revenue'].sum():,.2f}")
-print(f"Net Revenue   : {df['Net_Revenue'].sum():,.2f}")
-print(f"Total Profit  : {df['Profit'].sum():,.2f}")
+# ── 9. Filter – Corporate Orders Only ────────────────────────
+corporate = df[df["Customer_Type"] == "Corporate"]
+print("\nCorporate Orders Count:", len(corporate))
+print("Corporate Total Revenue:", round(corporate["Revenue"].sum(), 2))
+
+# ── 10. Summary ───────────────────────────────────────────────
+print("\n===== SUMMARY =====")
+print("Total Orders     :", len(df))
+print("Total Revenue    :", round(df["Revenue"].sum(), 2))
+print("Avg Order Value  :", round(df["Revenue"].mean(), 2))
+print("Top Region       :", df.groupby("Region")["Revenue"].sum().idxmax())
+print("Top Category     :", df.groupby("Category")["Revenue"].sum().idxmax())
